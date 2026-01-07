@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../constants.dart';
+import '../admincategory/home/adminhome.dart';
+import '../admincategory/upload/adminupload.dart';
 import '../adminlogin/adminlogin.dart';
 
 class Adminfront extends StatefulWidget
@@ -18,8 +20,8 @@ class _AdminfrontState extends State<Adminfront>
 
   static List<Widget> _widgetOptions = <Widget>
   [
-    //Home(),
-   // Upload(),
+    Home(),
+    Upload(),
   ];
 
   void _onItemTapped(int index) {
@@ -57,7 +59,7 @@ class _AdminfrontState extends State<Adminfront>
       ),
       body: Center
         (
-        //child: _widgetOptions.elementAt(_selectedIndex),
+        child: _widgetOptions.elementAt(_selectedIndex),
       ),
       backgroundColor: kLightGold,
       bottomNavigationBar: BottomNavigationBar(

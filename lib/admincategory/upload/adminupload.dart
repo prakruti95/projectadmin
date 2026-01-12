@@ -37,8 +37,7 @@ class _UploadState extends State<Upload>
   {
     size = MediaQuery.of(context).size;
 
-
-    return Scaffold(
+   return Scaffold(
       backgroundColor: kLightGold,
       body: Center(
         child: ListView(

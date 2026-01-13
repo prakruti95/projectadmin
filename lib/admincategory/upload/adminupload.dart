@@ -82,7 +82,7 @@ class _UploadState extends State<Upload>
                               TextField(
                                 controller: upload_category,
                                 decoration: const InputDecoration(
-                                  hintText: "Input Category Name",
+                                  hintText: "Input Category1 Name",
                                 ),
                               ),
                               SizedBox(height: size.height * 1 / 100),
